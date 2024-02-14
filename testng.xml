@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="/Users/praharshanigampa/Desktop/SimpleApp/src/test/java/newProject/program1/Coinyodha/Annotations.java">
+        <classes>
+            <class name="newProject.program1.Coinyodha.Annotations">
+                <methods>
+                    <include name="sell"/>
+                    <include name="buy"/>
+                    <include name="crypto"/>
+                    <include name="loadWallet"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="/Users/praharshanigampa/Desktop/SimpleApp/src/test/java/newProject/program1/Coinyodha/Annotations1.java">
+        <classes>
+            <class name="newProject.program1.Coinyodha.Annotations1">
+                <methods>
+                    <include name="allTransactions"/>
+                    <include name="withdrawOrTransferHistory"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="/Users/praharshanigampa/Desktop/SimpleApp/src/test/java/newProject/program1/Coinyodha/Annotations2.java">
+        <classes>
+            <class name="newProject.program1.Coinyodha.Annotations2">
+                <methods>
+                    <include name="giftCard"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
