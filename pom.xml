@@ -62,11 +62,11 @@
         <!-- https://mvnrepository.com/artifact/commons-net/commons-net-[INFO]: Used for ftpUtils -->
 
 
-           <!-- <dependency>
+            <dependency>
                 <groupId>org.seleniumhq.selenium</groupId>
                 <artifactId>selenium-java</artifactId>
-                <version>3.141.59</version> &lt;!&ndash; Use the latest version available &ndash;&gt;
-            </dependency>-->
+                <version>3.141.59</version> <!-- Use the latest version available -->
+            </dependency>
 
 
     </dependencies>
