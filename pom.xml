@@ -5,7 +5,11 @@
 	<groupId>com.simpleproject.demo</groupId>
 	<artifactId>SimpleApp</artifactId>
 	<version>1</version>
-
+    <properties>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.traget>17</maven.compiler.traget>
+    <suiteFile>testng.xml</suiteFile>
+    </properties>
 
 	<dependencies>
 		<!--https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
@@ -58,12 +62,32 @@
         <!-- https://mvnrepository.com/artifact/commons-net/commons-net-[INFO]: Used for ftpUtils -->
 
 
-            <dependency>
+           <!-- <dependency>
                 <groupId>org.seleniumhq.selenium</groupId>
                 <artifactId>selenium-java</artifactId>
-                <version>3.141.59</version> <!-- Use the latest version available -->
-            </dependency>
+                <version>3.141.59</version> &lt;!&ndash; Use the latest version available &ndash;&gt;
+            </dependency>-->
 
 
     </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>3.2.5</version>
+                <!--<configuration>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>${suiteFile}</suiteXmlFile>
+                    </suiteXmlFiles>
+                </configuration>-->
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.12.1</version>
+            </plugin>
+        </plugins>
+
+    </build>
 </project>
